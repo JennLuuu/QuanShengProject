@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #231815;
+}
+.clearFix::after{
+content: "";
+display:block;
+clear: both;
+height: 0;
+}
+/* 头部样式 */
+.header {
+    /* 宽不用设置,暂时设置高度和背景颜色用以确定头部位置 */
+    height: 202px;
+    background: url(./images/g-bg.jpg) center center no-repeat;
+}
+.header_top_inner {
+    width: 1358px;
+    height: 202px;
+    margin: 0 auto;
+}
+.header_top_inner {
+    height: 142px;
+    line-height: 142px;
+    position: relative;
+}
+.header_top_inner h1 {
+    position: absolute;
+    left: 0;
+    top: 9px;
+}
+.header_top_inner ul {
+    position: absolute;
+    right: 43px;
+    bottom: 42px;
+}
+.header_top_inner .nav li {
+    float: left;
+}
+.header_top_inner .nav li {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 3px solid #000;
+    padding: 6px 18px;
+}
+.header_top_inner .nav li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header_top_inner .nav li:nth-child(1) {
+    border-bottom: 3px solid #cf000d;
+}
+.header_bottom {
+    height: 60px;
+    background-color: rgba(69, 71, 71, 0.5);
+    line-height: 60px;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 45px;
+}
+.header_bottom_inner {
+    width: 1358px;
+    margin: 0 auto;
+}
+.header_bottom a {
+    color: #fff;
+}
+
+/* 内容 */
+.content_inner {
+    width: 1358px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+}
+.content_inner ul {
+    margin-top: 23px;
+}
+.content_inner li {
+    width: 1358px;
+    height: 265px;
+    background-color: #f9f9f9;
+    margin-bottom: 94px;
+
+}
+.content_inner li:nth-child(2n) {
+    background-color: #fff;
+}
+.content_inner li:nth-child(2n) .img {
+    float: right;
+}
+.content_inner li:nth-child(2n) .text {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.content_inner li:nth-child(2n) .text_btm {
+    margin-left: 70px;
+}
+.content_inner li:nth-child(2n) .text_top {
+    float: left; 
+    margin-bottom: 25px;
+}
+.content_inner li:nth-child(2n+1) .img {
+    float: left;
+}
+.content_inner li:nth-child(2n+1) .text {
+    float: right;
+    padding-right: 70px;
+    padding-left: 0px;
+}
+.content_inner li:nth-child(2n) .text_top_title,.content_inner li:nth-child(2n) .text_top_eng {
+    float: left;
+    border-left: 0;
+    border-left: 3px solid #e60012;
+}
+.content_inner li:nth-child(2n) .text_top_eng {
+    border-left: 0;
+}
+.content_inner .img {
+    width: 431px;
+    float: left;
+}
+.text {
+    float: right;
+    width: 857px;
+    padding-right: 70px;
+}
+.text_top {
+    float: right;
+    width: 771px;
+    margin-top: 24px;
+}
+.text_top .text_top_title{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color:#000;
+    float: right;
+    border-left: 3px solid #e60012;
+    padding-left: 12px;
+}
+.text_top .text_top_eng{
+    display: inline-block;
+    font-size: 13px;
+    color: #747272;
+    float: right;
+    padding: 16px 10px 0 0;
+}
+.text_btm {
+    float: right;
+    padding: 42px 32px 0px 32px;
+    position: relative;
+}
+.text_btm p {
+    width: 741px;
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 18px;
+    color: #a2a2a2;
+}
+.text_btm img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.text_btm :nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* 底部 */
+.footer {
+    border-top: 1px solid #dad7d7;
+    min-height: 170px
+}
+.footer_inner {
+    width: 1358px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    
+    position: relative;
+}
+.footer_inner h2 {
+    float: left;
+    width: 275px;
+    border-right: 3px solid #b50000;
+    padding: 0 42px 0 42px;
+    margin-top: 52px;
+}
+.footer a img {
+    display: inline-block;
+    height: 56px;
+}
+.footer_right {
+    /* 二维码作为块的背景图引入,用padding显示 */
+    width: 628px;
+    height: 74px;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    text-align: right;
+    padding-right: 83px;
+    background: url(./images/erwei.jpg) 0 0 no-repeat;
+    background-position: right;
+    margin-right: 49px;
+ }
+ .footer_right .list {
+    float: right;
+    width: 628px;
+    height: 24px;
+    /* line-height: 74px; */
+    /* text-align: center; */
+ }
+ .footer_right .list li {
+    float: right;
+    width: 62px;
+    height: 22px;
+    padding: 0 13px 0 13px;
+ }
+ .footer_right .list li a {
+    font-size: 15px;
+ }
+ .footer_right .list li + li {
+    border-right: 2px solid #747272;
+ }
+ .footer_right p {
+    float: right;
+    width: 530px;
+ }
